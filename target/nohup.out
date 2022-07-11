@@ -1,0 +1,314 @@
+|-------------------------------------------|
+|    ______ ______ ____   _____             |
+|   |  ____|  ____|  _ \ / ____|            |
+|   | |__  | |__  | |_) | (___              |
+|   |  __| |  __| |  _ < \___ \             |
+|   | |    | |____| |_) |____) |            |
+|   |_|    |______|____/|_____/             |
+|   Spring-Boot-Version: 2.0.4.RELEASE      |
+|-------------------------------------------|
+22:54:11.480 febs [main] INFO  cc.mrbird.Application - Starting Application v2.0 on localhost.localdomain with PID 31655 (/home/ztszm/git/FEBS/target/febs.jar started by ztszm in /home/ztszm/git/FEBS/target)
+22:54:11.523 febs [main] INFO  cc.mrbird.Application - No active profile set, falling back to default profiles: default
+22:54:12.100 febs [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Fri Apr 05 22:54:12 CST 2019]; root of context hierarchy
+22:54:15.062 febs [main] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'shiroRealm' with a different definition: replacing [Generic bean: class [cc.mrbird.common.shiro.ShiroRealm]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:file:/home/ztszm/git/FEBS/target/febs.jar!/BOOT-INF/classes!/cc/mrbird/common/shiro/ShiroRealm.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=shiroConfig; factoryMethodName=shiroRealm; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [cc/mrbird/common/shiro/ShiroConfig.class]]
+22:54:15.889 febs [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+22:54:17.230 febs [main] INFO  c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+22:54:17.663 febs [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+22:54:17.669 febs [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletConfigInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:54:17.669 febs [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.core.env.PropertySource$StubPropertySource] to EncryptablePropertySourceWrapper
+22:54:17.670 febs [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+22:54:17.670 febs [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableMapPropertySourceWrapper
+22:54:17.671 febs [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+22:54:17.671 febs [main] INFO  c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationConfig: [classpath:/application.yml] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+22:54:17.831 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'asyncExecutorPoolConfig' of type [cc.mrbird.common.config.AsyncExecutorPoolConfig$$EnhancerBySpringCGLIB$$1527774e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:17.954 febs [main] INFO  c.u.j.f.DefaultLazyPropertyFilter - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+22:54:17.980 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:18.359 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:18.749 febs [main] INFO  c.u.j.r.DefaultLazyPropertyResolver - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+22:54:18.755 febs [main] INFO  c.u.j.d.DefaultLazyPropertyDetector - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+22:54:18.801 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:18.882 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:18.940 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [cc.mrbird.common.config.RedisConfig$$EnhancerBySpringCGLIB$$6ed1e21e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:19.117 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$89edec07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:19.382 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'febsProperties' of type [cc.mrbird.common.config.FebsProperties$$EnhancerBySpringCGLIB$$67a783da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:19.401 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfig' of type [cc.mrbird.common.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$95457241] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:20.753 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:20.789 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myBatisConfig' of type [cc.mrbird.common.config.MyBatisConfig$$EnhancerBySpringCGLIB$$a5e4de16] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:20.809 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlStatementInterceptor' of type [cc.mrbird.common.interceptor.SqlStatementInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:20.835 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bcc23d37] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:20.859 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$a399e179] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:20.868 febs [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+22:54:21.131 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:21.160 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:21.292 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:24.829 febs [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+22:54:24.829 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:25.068 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.499 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.559 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.581 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.602 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userMapper' of type [com.sun.proxy.$Proxy96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.665 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.671 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleMapper' of type [com.sun.proxy.$Proxy98] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.716 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userRoleService' of type [cc.mrbird.system.service.impl.UserRoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.785 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [cc.mrbird.system.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.895 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.901 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMapper' of type [com.sun.proxy.$Proxy104] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.932 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.937 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuMapper' of type [com.sun.proxy.$Proxy105] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:26.982 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleMenuService' of type [cc.mrbird.system.service.impl.RoleMenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:27.053 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'roleService' of type [cc.mrbird.system.service.impl.RoleServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:27.174 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:27.182 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuMapper' of type [com.sun.proxy.$Proxy106] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:27.209 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'menuService' of type [cc.mrbird.system.service.impl.MenuServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:27.290 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroRealm' of type [cc.mrbird.common.shiro.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:27.391 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisSessionDAO' of type [org.crazycake.shiro.RedisSessionDAO] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:27.429 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sessionManager' of type [org.apache.shiro.web.session.mgt.DefaultWebSessionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:27.488 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:27.582 febs [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:54:29.639 febs [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+22:54:29.702 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+22:54:29.739 febs [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+22:54:29.740 febs [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.32
+22:54:29.763 febs [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+22:54:30.019 febs [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:54:30.020 febs [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 17920 ms
+22:54:30.577 febs [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+22:54:30.578 febs [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+22:54:30.579 febs [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+22:54:30.579 febs [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+22:54:30.587 febs [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'xssFilter' to urls: [/*]
+22:54:30.588 febs [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+22:54:30.588 febs [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'shiroFilterFactoryBean' to: [/*]
+22:54:30.593 febs [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+22:54:30.599 febs [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+22:54:30.701 febs [localhost-startStop-1] INFO  cc.mrbird.common.xss.XssFilter - ------------ xss filter init ------------
+22:54:31.224 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+22:54:31.346 febs [main] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+22:54:31.346 febs [main] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+22:54:31.368 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+22:54:31.413 febs [main] INFO  o.s.s.quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+22:54:31.474 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'MyScheduler' with instanceId 'localhost.localdomain1554476071231'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+22:54:31.474 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'MyScheduler' initialized from an externally provided properties instance.
+22:54:31.475 febs [main] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+22:54:31.567 febs [main] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1672fe87
+22:54:32.425 febs [main] INFO  c.m.c.i.SqlStatementInterceptor - 【SQL语句Id】>>>> cc.mrbird.job.dao.JobMapper.queryList
+22:54:32.425 febs [main] INFO  c.m.c.i.SqlStatementInterceptor - 【SQL语句耗时】>>>> 770 ms
+22:54:32.426 febs [main] INFO  c.m.c.i.SqlStatementInterceptor - 【SQL语句】>>>> select job_id jobId,bean_name beanName,method_name methodName, params,cron_expression cronExpression,status,remark,create_time createTime from t_job order by job_id
+22:54:41.081 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'taskExecutor'
+22:54:42.049 febs [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:54:43.287 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Fri Apr 05 22:54:12 CST 2019]; root of context hierarchy
+22:54:44.195 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/jobLog/list]}" onto public java.util.Map<java.lang.String, java.lang.Object> cc.mrbird.job.controller.JobLogController.jobLogList(cc.mrbird.common.domain.QueryRequest,cc.mrbird.job.domain.JobLog)
+22:54:44.197 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/jobLog/delete]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobLogController.deleteJobLog(java.lang.String)
+22:54:44.198 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/jobLog/excel]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobLogController.jobLogExcel(cc.mrbird.job.domain.JobLog)
+22:54:44.198 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/jobLog/csv]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobLogController.jobLogCsv(cc.mrbird.job.domain.JobLog)
+22:54:44.199 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/jobLog]}" onto public java.lang.String cc.mrbird.job.controller.JobLogController.index()
+22:54:44.203 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public int cc.mrbird.common.controller.TestController.testLimiter()
+22:54:44.204 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/download]}" onto public void cc.mrbird.common.controller.CommonController.fileDownload(java.lang.String,java.lang.Boolean,javax.servlet.http.HttpServletResponse) throws java.io.IOException,cc.mrbird.common.exception.FileDownloadException
+22:54:44.211 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/gifCode],methods=[GET]}" onto public void cc.mrbird.system.controller.LoginController.getGifCode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)
+22:54:44.212 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String cc.mrbird.system.controller.LoginController.redirectIndex()
+22:54:44.212 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/403],methods=[GET]}" onto public java.lang.String cc.mrbird.system.controller.LoginController.forbid()
+22:54:44.213 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[GET]}" onto public java.lang.String cc.mrbird.system.controller.LoginController.login()
+22:54:44.213 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login],methods=[POST]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.LoginController.login(java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean)
+22:54:44.214 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.String cc.mrbird.system.controller.LoginController.index(org.springframework.ui.Model)
+22:54:44.220 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/list]}" onto public java.util.List<cc.mrbird.system.domain.Menu> cc.mrbird.system.controller.MenuController.menuList(cc.mrbird.system.domain.Menu)
+22:54:44.221 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/menuButtonTree]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.MenuController.getMenuButtonTree()
+22:54:44.221 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/tree]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.MenuController.getMenuTree()
+22:54:44.222 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/getUserMenu]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.MenuController.getUserMenu(java.lang.String)
+22:54:44.222 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/excel]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.MenuController.menuExcel(cc.mrbird.system.domain.Menu)
+22:54:44.223 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/csv]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.MenuController.menuCsv(cc.mrbird.system.domain.Menu)
+22:54:44.223 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/checkMenuName]}" onto public boolean cc.mrbird.system.controller.MenuController.checkMenuName(java.lang.String,java.lang.String,java.lang.String)
+22:54:44.224 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/add]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.MenuController.addMenu(cc.mrbird.system.domain.Menu)
+22:54:44.224 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/delete]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.MenuController.deleteMenus(java.lang.String)
+22:54:44.225 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/update]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.MenuController.updateMenu(cc.mrbird.system.domain.Menu)
+22:54:44.225 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/urlList],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.String>> cc.mrbird.system.controller.MenuController.getAllUrl()
+22:54:44.226 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/menu]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.MenuController.getMenu(java.lang.String)
+22:54:44.226 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu/getMenu]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.MenuController.getMenu(java.lang.Long)
+22:54:44.226 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/menu]}" onto public java.lang.String cc.mrbird.system.controller.MenuController.index()
+22:54:44.231 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/del]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RedisController.del(java.lang.String)
+22:54:44.232 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/info]}" onto public java.lang.String cc.mrbird.system.controller.RedisController.getRedisInfo(org.springframework.ui.Model)
+22:54:44.233 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/keysSize]}" onto public java.lang.String cc.mrbird.system.controller.RedisController.getKeysSize()
+22:54:44.233 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/memoryInfo]}" onto public java.lang.String cc.mrbird.system.controller.RedisController.getMemoryInfo()
+22:54:44.233 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/pttl]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RedisController.pttl(java.lang.String)
+22:54:44.234 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/pexpire]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RedisController.pexpire(java.lang.String)
+22:54:44.234 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/terminal]}" onto public java.lang.String cc.mrbird.system.controller.RedisController.redisTerminal(org.springframework.ui.Model)
+22:54:44.235 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/get]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RedisController.get(java.lang.String)
+22:54:44.235 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/exists]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RedisController.exists(java.lang.String)
+22:54:44.236 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/keys]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RedisController.keys(java.lang.String)
+22:54:44.236 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/set]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RedisController.set(java.lang.String)
+22:54:44.238 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dict/excel]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DictController.dictExcel(cc.mrbird.system.domain.Dict)
+22:54:44.239 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dict/csv]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DictController.dictCsv(cc.mrbird.system.domain.Dict)
+22:54:44.239 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dict/getDict]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DictController.getDict(java.lang.Long)
+22:54:44.239 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dict/add]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DictController.addDict(cc.mrbird.system.domain.Dict)
+22:54:44.240 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dict/delete]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DictController.deleteDicts(java.lang.String)
+22:54:44.240 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dict/update]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DictController.updateDict(cc.mrbird.system.domain.Dict)
+22:54:44.241 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dict/list]}" onto public java.util.Map<java.lang.String, java.lang.Object> cc.mrbird.system.controller.DictController.dictList(cc.mrbird.common.domain.QueryRequest,cc.mrbird.system.domain.Dict)
+22:54:44.241 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dict]}" onto public java.lang.String cc.mrbird.system.controller.DictController.index()
+22:54:44.242 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/movie/coming]}" onto public java.lang.String cc.mrbird.web.controller.MovieController.movieComing()
+22:54:44.243 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/movie/getMovieHot]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.MovieController.getMoiveHot()
+22:54:44.243 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/movie/getMovieComing]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.MovieController.getMovieComing()
+22:54:44.244 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/movie/detail]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.MovieController.getDetail(java.lang.String)
+22:54:44.244 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/movie/comments]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.MovieController.getComments(java.lang.String)
+22:54:44.245 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/movie/hot]}" onto public java.lang.String cc.mrbird.web.controller.MovieController.movieHot()
+22:54:44.246 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/one/readingList]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.OneIsAllController.getReadingList()
+22:54:44.247 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/one/yuwenDetail]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.OneIsAllController.getYuwenDetail(java.lang.String,java.lang.String)
+22:54:44.247 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/one/yuwenComments]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.OneIsAllController.getYuwenComments(java.lang.String)
+22:54:44.248 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/one/essayDetail]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.OneIsAllController.getEssayDetail(java.lang.String,java.lang.String)
+22:54:44.248 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/one/essayComments]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.OneIsAllController.getEssayComments(java.lang.String)
+22:54:44.248 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/one/painting]}" onto public java.lang.String cc.mrbird.web.controller.OneIsAllController.paintIndex()
+22:54:44.249 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/one/yuwen]}" onto public java.lang.String cc.mrbird.web.controller.OneIsAllController.yuwenIndex()
+22:54:44.249 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/one/essay]}" onto public java.lang.String cc.mrbird.web.controller.OneIsAllController.essayIndex()
+22:54:44.249 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/one/oneList]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.OneIsAllController.getOneList()
+22:54:44.252 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/update]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobController.updateJob(cc.mrbird.job.domain.Job)
+22:54:44.252 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/getSysCronClazz]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobController.getSysCronClazz(cc.mrbird.job.domain.Job)
+22:54:44.253 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/list]}" onto public java.util.Map<java.lang.String, java.lang.Object> cc.mrbird.job.controller.JobController.jobList(cc.mrbird.common.domain.QueryRequest,cc.mrbird.job.domain.Job)
+22:54:44.253 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/checkCron]}" onto public boolean cc.mrbird.job.controller.JobController.checkCron(java.lang.String)
+22:54:44.254 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/getJob]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobController.getJob(java.lang.Long)
+22:54:44.254 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/run]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobController.runJob(java.lang.String)
+22:54:44.254 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/excel]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobController.jobExcel(cc.mrbird.job.domain.Job)
+22:54:44.255 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/csv]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobController.jobCsv(cc.mrbird.job.domain.Job)
+22:54:44.256 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/add]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobController.addJob(cc.mrbird.job.domain.Job)
+22:54:44.256 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/delete]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobController.deleteJob(java.lang.String)
+22:54:44.257 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/pause]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobController.pauseJob(java.lang.String)
+22:54:44.257 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job/resume]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.job.controller.JobController.resumeJob(java.lang.String)
+22:54:44.258 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/job]}" onto public java.lang.String cc.mrbird.job.controller.JobController.index()
+22:54:44.260 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/update]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DeptController.updateRole(cc.mrbird.system.domain.Dept)
+22:54:44.261 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/getDept]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DeptController.getDept(java.lang.Long)
+22:54:44.261 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/list]}" onto public java.util.List<cc.mrbird.system.domain.Dept> cc.mrbird.system.controller.DeptController.deptList(cc.mrbird.system.domain.Dept)
+22:54:44.262 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/excel]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DeptController.deptExcel(cc.mrbird.system.domain.Dept)
+22:54:44.262 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/csv]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DeptController.deptCsv(cc.mrbird.system.domain.Dept)
+22:54:44.262 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/checkDeptName]}" onto public boolean cc.mrbird.system.controller.DeptController.checkDeptName(java.lang.String,java.lang.String)
+22:54:44.263 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/delete]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DeptController.deleteDepts(java.lang.String)
+22:54:44.263 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/add]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DeptController.addRole(cc.mrbird.system.domain.Dept)
+22:54:44.263 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept/tree]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.DeptController.getDeptTree()
+22:54:44.264 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/dept]}" onto public java.lang.String cc.mrbird.system.controller.DeptController.index()
+22:54:44.267 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/theme]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.updateTheme(cc.mrbird.system.domain.User)
+22:54:44.269 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.updateUser(cc.mrbird.system.domain.User,java.lang.Long[])
+22:54:44.270 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.deleteUsers(java.lang.String)
+22:54:44.270 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/updatePassword]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.updatePassword(java.lang.String)
+22:54:44.270 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/updateUserProfile]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.updateUserProfile(cc.mrbird.system.domain.User)
+22:54:44.271 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getUser]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.getUser(java.lang.Long)
+22:54:44.271 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list]}" onto public java.util.Map<java.lang.String, java.lang.Object> cc.mrbird.system.controller.UserController.userList(cc.mrbird.common.domain.QueryRequest,cc.mrbird.system.domain.User)
+22:54:44.272 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/excel]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.userExcel(cc.mrbird.system.domain.User)
+22:54:44.272 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/csv]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.userCsv(cc.mrbird.system.domain.User)
+22:54:44.272 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/regist]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.regist(cc.mrbird.system.domain.User)
+22:54:44.273 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/checkPassword]}" onto public boolean cc.mrbird.system.controller.UserController.checkPassword(java.lang.String)
+22:54:44.273 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/profile]}" onto public java.lang.String cc.mrbird.system.controller.UserController.profileIndex(org.springframework.ui.Model)
+22:54:44.273 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/getUserProfile]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.getUserProfile(java.lang.Long)
+22:54:44.274 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changeAvatar]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.changeAvatar(java.lang.String)
+22:54:44.274 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/checkUserName]}" onto public boolean cc.mrbird.system.controller.UserController.checkUserName(java.lang.String,java.lang.String)
+22:54:44.274 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/add]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.UserController.addUser(cc.mrbird.system.domain.User,java.lang.Long[])
+22:54:44.275 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user]}" onto public java.lang.String cc.mrbird.system.controller.UserController.index(org.springframework.ui.Model)
+22:54:44.276 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/log/list]}" onto public java.util.Map<java.lang.String, java.lang.Object> cc.mrbird.system.controller.LogController.logList(cc.mrbird.common.domain.QueryRequest,cc.mrbird.system.domain.SysLog)
+22:54:44.277 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/log/excel]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.LogController.logExcel(cc.mrbird.system.domain.SysLog)
+22:54:44.277 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/log/csv]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.LogController.logCsv(cc.mrbird.system.domain.SysLog)
+22:54:44.278 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/log/delete]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.LogController.deleteLogss(java.lang.String)
+22:54:44.278 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/log]}" onto public java.lang.String cc.mrbird.system.controller.LogController.index()
+22:54:44.279 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/session/forceLogout]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.SessionController.forceLogout(java.lang.String)
+22:54:44.280 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/session]}" onto public java.lang.String cc.mrbird.system.controller.SessionController.online()
+22:54:44.281 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/session/list]}" onto public java.util.Map<java.lang.String, java.lang.Object> cc.mrbird.system.controller.SessionController.list()
+22:54:44.283 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/list]}" onto public java.util.Map<java.lang.String, java.lang.Object> cc.mrbird.system.controller.RoleController.roleList(cc.mrbird.common.domain.QueryRequest,cc.mrbird.system.domain.Role)
+22:54:44.284 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/csv]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RoleController.roleCsv(cc.mrbird.system.domain.Role)
+22:54:44.284 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/checkRoleName]}" onto public boolean cc.mrbird.system.controller.RoleController.checkRoleName(java.lang.String,java.lang.String)
+22:54:44.284 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/excel]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RoleController.roleExcel(cc.mrbird.system.domain.Role)
+22:54:44.285 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/delete]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RoleController.deleteRoles(java.lang.String)
+22:54:44.285 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/update]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RoleController.updateRole(cc.mrbird.system.domain.Role,java.lang.Long[])
+22:54:44.286 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/getRole]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RoleController.getRole(java.lang.Long)
+22:54:44.286 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role/add]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.system.controller.RoleController.addRole(cc.mrbird.system.domain.Role,java.lang.Long[])
+22:54:44.286 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/role]}" onto public java.lang.String cc.mrbird.system.controller.RoleController.index()
+22:54:44.287 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/article/query]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.ArticleController.queryArticle(java.lang.String)
+22:54:44.288 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/article]}" onto public java.lang.String cc.mrbird.web.controller.ArticleController.index()
+22:54:44.288 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weather]}" onto public java.lang.String cc.mrbird.web.controller.WeatherController.weather()
+22:54:44.288 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/weather/query]}" onto public cc.mrbird.common.domain.ResponseBo cc.mrbird.web.controller.WeatherController.queryWeather(java.lang.String)
+22:54:44.294 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+22:54:44.294 febs [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+22:54:44.400 febs [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:54:44.400 febs [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+22:54:44.447 febs [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+22:54:45.047 febs [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+22:54:49.086 febs [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+22:54:49.090 febs [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'statFilter' has been autodetected for JMX exposure
+22:54:49.091 febs [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+22:54:49.104 febs [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+22:54:49.106 febs [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+22:54:49.131 febs [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+22:54:49.131 febs [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Will start Quartz Scheduler [MyScheduler] in 1 seconds
+22:54:49.153 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+22:54:49.242 febs [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8081]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:398)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:330)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1258)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at cc.mrbird.Application.main(Application.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 21 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 22 common frames omitted
+22:54:49.248 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+22:54:49.248 febs [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+22:54:49.307 febs [main] INFO  o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+22:54:49.308 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+22:54:49.308 febs [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+22:54:49.314 febs [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+22:54:49.318 febs [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+22:54:49.339 febs [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d24753a: startup date [Fri Apr 05 22:54:12 CST 2019]; root of context hierarchy
+22:54:49.342 febs [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+22:54:49.365 febs [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+22:54:49.366 febs [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+22:54:49.368 febs [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+22:54:49.388 febs [main] INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+22:54:49.389 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_localhost.localdomain1554476071231 shutting down.
+22:54:49.389 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_localhost.localdomain1554476071231 paused.
+22:54:49.389 febs [main] INFO  org.quartz.core.QuartzScheduler - Scheduler MyScheduler_$_localhost.localdomain1554476071231 shutdown complete.
+22:54:49.437 febs [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
