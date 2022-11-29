@@ -103,8 +103,9 @@ public class RoleServiceImpl extends BaseService<Role> implements RoleService {
     public RoleWithMenu findRoleWithMenus(Long roleId) {
         List<RoleWithMenu> list = this.roleMapper.findById(roleId);
         List<Long> menuList = list.stream().map(RoleWithMenu::getMenuId).collect(Collectors.toList());
-        if (list.isEmpty())
+        if (list.isEmpty()) {
             return null;
+        }
         RoleWithMenu roleWithMenu = list.get(0);
         roleWithMenu.setMenuIds(menuList);
         return roleWithMenu;

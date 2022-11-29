@@ -1,3 +1,0 @@
-08:42:20.283 febs [main] ERROR c.a.druid.filter.stat.StatFilter - slow sql 3319 millis. select job_id jobId,bean_name beanName,method_name methodName,
-  	params,cron_expression cronExpression,status,remark,create_time createTime 
-    from t_job order by job_id[]

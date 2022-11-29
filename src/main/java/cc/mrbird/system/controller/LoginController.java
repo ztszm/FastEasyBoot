@@ -64,7 +64,7 @@ public class LoginController extends BaseController {
             if (subject != null)
                 subject.logout();
             super.login(token);
-            //this.userService.updateLoginTime(username);
+            this.userService.updateLoginTime(username);
             return ResponseBo.ok();
         } catch (UnknownAccountException | IncorrectCredentialsException | LockedAccountException e) {
             return ResponseBo.error(e.getMessage());

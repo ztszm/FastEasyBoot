@@ -1,14 +1,12 @@
 package cc.mrbird.system.service.impl;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import cc.mrbird.common.domain.QueryRequest;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.shiro.SecurityUtils;
+import org.assertj.core.util.Lists;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +23,7 @@ import cc.mrbird.system.domain.UserRole;
 import cc.mrbird.system.domain.UserWithRole;
 import cc.mrbird.system.service.UserRoleService;
 import cc.mrbird.system.service.UserService;
+import sun.plugin.com.Utils;
 import tk.mybatis.mapper.entity.Example;
 @Service("userService")
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true, rollbackFor = Exception.class)
@@ -158,8 +157,9 @@ public class UserServiceImpl extends BaseService<User> implements UserService {
     public UserWithRole findById(Long userId) {
         List<UserWithRole> list = this.userMapper.findUserWithRole(userId);
         List<Long> roleList = list.stream().map(UserWithRole::getRoleId).collect(Collectors.toList());
-        if (list.isEmpty())
-            return null;
+        if (list.isEmpty()){
+            return new UserWithRole();
+        }
         UserWithRole userWithRole = list.get(0);
         userWithRole.setRoleIds(roleList);
         return userWithRole;

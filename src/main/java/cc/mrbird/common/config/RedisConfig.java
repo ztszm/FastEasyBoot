@@ -29,6 +29,10 @@ import java.io.Serializable;
 import java.nio.charset.Charset;
 import java.time.Duration;
 
+/**
+ * @author admin
+ */
+@SuppressWarnings("ALL")
 @Configuration
 
 public class RedisConfig extends CachingConfigurerSupport {

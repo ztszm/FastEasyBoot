@@ -5,6 +5,9 @@ import cc.mrbird.common.shiro.ShiroProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * @author admin
+ */
 @Configuration
 @ConfigurationProperties(prefix = "febs")
 public class FebsProperties {

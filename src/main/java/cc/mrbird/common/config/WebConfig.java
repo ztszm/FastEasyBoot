@@ -10,6 +10,9 @@ import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author admin
+ */
 @Configuration
 @SuppressWarnings("unchecked")
 public class WebConfig {
