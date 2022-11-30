@@ -10,7 +10,7 @@ spring:
       driverClassName: com.mysql.jdbc.Driver
       url: jdbc:mysql://192.168.0.110:3306/mrbird?useUnicode=true&characterEncoding=utf8&useSSL=false
       username: root
-      password: root
+      password: pXLdDVRMwypoFlOTQk5aHsiSGnctaLss9ukmzpgAF+3sDRlP8Sd8xEcoXz1L3xhwozWRUbeaIt/HAyeHgltQjglFr2s/cE6+M8zAEQcK7HE2wgtIpZMwSq+aMRZHW+hxeKYCYIWiLJjuWsswfmFJKTH2cN+Y70f0LEeaqxTaibw=
       # 连接池配置
       initial-size: 5
       min-idle: 5
