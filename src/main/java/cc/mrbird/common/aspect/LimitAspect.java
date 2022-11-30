@@ -14,6 +14,7 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.data.redis.core.script.RedisScript;
@@ -30,6 +31,7 @@ import java.util.Objects;
 /**
  * 接口限流注解，示例见 cc.mrbird.common.controller.TestController
  */
+@Order(1)
 @Aspect
 @Component
 public class LimitAspect {
